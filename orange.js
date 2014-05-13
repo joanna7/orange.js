@@ -26,6 +26,9 @@
   // contructor of class `Orange`
   var Orange = function(selector) {
 
+    // store document, shorten scope
+    var document = window.document;
+
     // storing elements matching the selector
     this.el = [];
 
@@ -44,6 +47,7 @@
 
   /*methods*/
   Orange.prototype = {
+
     // event
     addEvent: function(type, fn) {
       if (document.addEventListener) {
