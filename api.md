@@ -9,12 +9,14 @@
 ### IE7
 ### IE8
 ### IE9
+### IE10
+### webkit
+### gecko
 
 ## Event相关
 ### addEvent
 
 ## class相关
-### class:
 ### add
 ### has
 ### get
