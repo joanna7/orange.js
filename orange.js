@@ -25,7 +25,7 @@
       // nodeList can be modified in the future
       var nodeList = document.querySelectorAll(selector);
       this.el = nodeList;
-    } 
+    }
 
   };
 
@@ -55,7 +55,15 @@
       if (this.el.length != 1) {
         throw new Error('There should be only one matched element.');
       }
-      return this.el[0].getAttribute('class').split(' ').indexOf(cls) != -1;
+      return this.indexOf.call(this.el[0].getAttribute('class').split(' '), cls) != -1;
+    },
+
+    // array
+    indexOf: function(item) {
+      for (var i = 0, len = this.length; i < len; i++) {
+        if (item === this[i]) return i;
+      }
+      return -1;
     }
   }
   
