@@ -14,3 +14,12 @@ test('class selector', function() {
 test('chained selector', function() {
   equal(document.getElementById('idUl'), orange('#container .classUl').el[0]);
 });
+
+module('class methods');
+test('has: class have', function() {
+  equal(true, orange('#container .classUl').has('classUl'));
+});
+
+test('has: class don\'t have', function() {
+  equal(false, orange('#container .classUl').has('donthave'));
+});

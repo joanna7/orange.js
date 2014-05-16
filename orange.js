@@ -64,6 +64,14 @@
         this.el[0]['on' + type] = fn;
         return this;
       }
+    },
+
+    // class
+    has: function(cls) {
+      if (this.el.length != 1) {
+        throw new Error('There should be only one matched element.');
+      }
+      return this.el[0].getAttribute('class').split(' ').indexOf(cls) != -1;
     }
   }
   
