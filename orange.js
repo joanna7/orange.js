@@ -1,22 +1,6 @@
 // Orange.js 0.1.0
 
 (function() {
-
-  /**
-   * 实现需求：
-   *
-   * $()
-   * addEvent
-   *
-   * class:
-   * add
-   * has
-   * get
-   * 
-   * 
-   * 对象方法：
-   * 
-   */
   
   // global object `orange`
   window.orange = function(selector) {
